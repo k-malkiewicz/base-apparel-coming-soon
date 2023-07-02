@@ -8,7 +8,7 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ## Links
 
-- Live Site URL (I use Netlify for websites hosting) ⇒
+- Live Site URL (I use Netlify for websites hosting) ⇒ https://site-apparel-coming-soon-km9.netlify.app
 
 ## Built with
 
