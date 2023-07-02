@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  background-size: 60%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  padding: 4.0625rem 10.3125rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 0 0 0 10.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13.75rem;
+}
+.hero_main {
+  max-width: 50rem;
+}
+.hero_main h1 {
+  margin: 4.0625rem 0 0;
+  color: hsl(0, 36%, 70%);
+  font-size: 4.0625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+.hero_main h1 span {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+  line-height: 1.1;
+}
+.hero_main p {
+  color: hsl(0, 36%, 70%);
+  font-weight: 400;
+  line-height: 1.75;
+}
+.hero_main form {
+  margin: 2.5rem 0 0;
+  position: relative;
+}
+.hero_main form input {
+  width: 100%;
+  padding: 1.1875rem 9.6875rem 1.1875rem 2rem;
+  font-size: 1rem;
+  border: 0.0625rem solid hsl(0, 36%, 70%);
+  border-radius: 1.875rem;
+}
+.hero_main form input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.hero_main form input.error {
+  border: 0.125rem solid hsl(0, 93%, 68%);
+}
+.hero_main form button {
+  width: 6.25rem;
+  height: 3.5625rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border-radius: 1.875rem;
+  cursor: pointer;
+  position: absolute;
+  right: -0.0625rem;
+  top: 0;
+}
+.hero_main form button:hover {
+  background: hsl(0, 74%, 89%);
+}
+.hero_main form .error_msg {
+  display: none;
+  color: hsl(0, 93%, 68%);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  position: absolute;
+  left: 2rem;
+  top: 4.25rem;
+}
+.hero_main form .error_msg.invalid {
+  display: block;
+}
+.hero_main form .error_icon {
+  display: none;
+  position: absolute;
+  right: 7.3125rem;
+  top: 1.0625rem;
+}
+.hero_main form .error_icon.invalid {
+  display: block;
+}
+
+@media (max-width: 1380px) {
+  body {
+    background: none;
+  }
+  header {
+    padding: 3.75rem;
+  }
+  .hero {
+    gap: 3.125rem;
+    padding: 0 0 0 3.75rem;
+  }
+  .hero_main {
+    width: 31.25rem;
+  }
+  .hero picture img {
+    width: 18.75rem;
+    margin: 5rem 0 0;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    position: static;
+    padding: 1.8125rem 2rem;
+  }
+  header .logo {
+    width: 6.25rem;
+  }
+  .hero {
+    padding: 0 0 3.75rem;
+    flex-direction: column-reverse;
+  }
+  .hero_main {
+    width: 100%;
+    max-width: 28.125rem;
+    text-align: center;
+  }
+  .hero picture img {
+    width: 100%;
+    margin: 0;
+  }
+  .hero h1 {
+    margin: 0.75rem 0 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.625rem;
+  }
+  .hero p {
+    font-size: 0.875rem;
+    padding: 0 2.125rem;
+    line-height: 1.5;
+  }
+  .hero form {
+    margin: 2.125rem 0 0;
+    padding: 0 2rem;
+  }
+  .hero form input {
+    padding: 1rem 6.875rem 1rem 1.5625rem;
+    font-size: 0.875rem;
+  }
+  .hero form button {
+    width: 4.0625rem;
+    height: 3.125rem;
+    right: 1.9375rem;
+  }
+  .hero form .error_icon {
+    top: 0.75rem;
+    right: 6.875rem;
+  }
+  .hero form .error_msg {
+    font-size: 0.625rem;
+    top: 3.4375rem;
+    left: 2.1875rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

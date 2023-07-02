@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background: url('../images/bg-pattern-desktop.svg') no-repeat;
+    background-size: 60%;
+    font-family: $font-family;
+}
+
+header {
+    padding: 4.0625rem 10.3125rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 0 0 0 10.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13.75rem;
+    &_main {
+        max-width: 50rem;
+        h1 {
+            margin: 4.0625rem 0 0;
+            color: $color-primary;
+            font-size: 4.0625rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1rem;
+            span {
+                font-weight: 600;
+                color: $color-secondary;
+                line-height: 1.1;
+            }
+        }
+        p {
+            color: $color-primary;
+            font-weight: 400;
+            line-height: 1.75;
+        }
+        form {
+            margin: 2.5rem 0 0;
+            position: relative;
+            input {
+                width: 100%;
+                padding: 1.1875rem 9.6875rem 1.1875rem 2rem;
+                font-size: 1rem;
+                border: .0625rem solid $color-primary;
+                border-radius: 1.875rem;
+                &::placeholder {
+                    color: $color-primary;
+                }
+                &.error {
+                    border: .125rem solid $color-error;
+                }
+            }
+            button {
+                width: 6.25rem;
+                height: 3.5625rem;
+                background: $bg-submit-btn;
+                border-radius: 1.875rem;
+                cursor: pointer;
+                position: absolute;
+                right: -0.0625rem;
+                top: 0;
+                &:hover {
+                    background: $bg-submit-btn-hover;
+                }
+            }
+            .error_msg {
+                display: none;
+                color: $color-error;
+                font-size: .8125rem;
+                font-weight: 600;
+                position: absolute;
+                left: 2rem;
+                top: 4.25rem;
+                &.invalid {
+                    display: block;
+                }
+            }
+            .error_icon {
+                display: none;
+                position: absolute;
+                right: 7.3125rem;
+                top: 1.0625rem;
+                &.invalid {
+                    display: block;
+                }
+            }
+        }
+    }
+}

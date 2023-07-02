@@ -1,0 +1,76 @@
+@media(max-width: 1380px) {
+    body {
+        background: none;
+    }
+    
+    header {
+        padding: 3.75rem;
+    }
+    .hero {
+        gap: 3.125rem;
+        padding: 0 0 0 3.75rem;
+        &_main {
+            width: 31.25rem;
+        }
+        picture img {
+            width: 18.75rem;
+            margin: 5rem 0 0;
+        }
+    }
+}
+
+@media(max-width: 800px) {
+    header {
+        position: static;
+        padding: 1.8125rem 2rem;
+        .logo {
+            width: 6.25rem;
+        }
+    }
+
+    .hero {
+        padding: 0 0 3.75rem;
+        flex-direction: column-reverse;
+        &_main {
+            width: 100%;
+            max-width: 28.125rem;
+            text-align: center;
+        }
+        picture img {
+            width: 100%;
+            margin: 0;
+        }
+        h1 {
+            margin: .75rem 0 0;
+            font-size: 2.5rem;
+            letter-spacing: .625rem;
+        }
+        p {
+            font-size: .875rem;
+            padding: 0 2.125rem;
+            line-height: 1.5;
+        }
+        form {
+            margin: 2.125rem 0 0;
+            padding: 0 2rem;
+            input {
+                padding: 1rem 6.875rem 1rem 1.5625rem;
+                font-size: .875rem;
+            }
+            button {
+                width: 4.0625rem;
+                height: 3.125rem;
+                right: 1.9375rem;
+            }
+            .error_icon {
+                top: .75rem;
+                right: 6.875rem;
+            }
+            .error_msg {
+                font-size: .625rem;
+                top: 3.4375rem;
+                left: 2.1875rem;
+            }
+        }
+    }
+}
